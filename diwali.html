@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff8c00;
+        }
+
+        #diya {
+            width: 150px;
+            margin: 20px auto;
+            animation: diyaRotate 3s linear infinite;
+        }
+
+        @keyframes diyaRotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .wishes {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <title>Diwali Wishes</title>
+</head>
+<body>
+
+    <div id="container">
+        <img src="diya.png" alt="Diya" id="diya">
+        <h1>Happy Diwali!</h1>
+        <p>May this Festival of Lights bring joy, prosperity, and good health to you and your family.</p>
+        <p>Wishing you a sparkling and safe Diwali celebration!</p>
+        <a href="#" class="wishes">Send Diwali Wishes</a>
+    </div>
+
+</body>
+</html>
